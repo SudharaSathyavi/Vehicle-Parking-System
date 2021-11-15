@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="746.0" style="-fx-background-color: #ced6e0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.DashBoardFormController">
+   <children>
+      <Label prefHeight="60.0" prefWidth="746.0" style="-fx-background-color: PURPLE;" text="   PARKING  SYSTEM" textFill="#e1e1f8">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="15.0" layoutY="69.0" prefHeight="391.0" prefWidth="716.0" style="-fx-background-radius: 13px; -fx-background-color: #ffffff;" />
+      <Label layoutX="27.0" layoutY="93.0" prefHeight="39.0" prefWidth="96.0" style="-fx-background-radius: 6px;" text="Select Vehicle">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="164.0" prefHeight="39.0" prefWidth="86.0" style="-fx-background-radius: 6px;" text="Vehicle Type">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="219.0" prefHeight="39.0" prefWidth="59.0" style="-fx-background-radius: 6px;" text="Driver">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboSelectVehicle" layoutX="124.0" layoutY="97.0" onAction="#loadVehicleTypeOnAction" prefHeight="32.0" prefWidth="233.0" style="-fx-background-color: #c67aff; -fx-background-radius: 6px;" />
+      <Label fx:id="lblVehicleType" alignment="CENTER" layoutX="124.0" layoutY="157.0" prefHeight="39.0" prefWidth="233.0" style="-fx-background-color: #c67aff; -fx-text-fill: black; -fx-background-radius: 6px;" />
+      <Label layoutX="82.0" layoutY="300.0" prefHeight="39.0" prefWidth="200.0" text="Your Parking Slot Number">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblParkingSlot" alignment="CENTER" layoutX="48.0" layoutY="339.0" prefHeight="105.0" prefWidth="269.0" style="-fx-background-color: #c67aff; -fx-background-radius: 6px;">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboDriver" layoutX="124.0" layoutY="222.0" prefHeight="32.0" prefWidth="233.0" style="-fx-background-color: #c67aff; -fx-background-radius: 6px;" />
+      <Label fx:id="lblRealDate" alignment="CENTER" layoutX="452.0" layoutY="97.0" prefHeight="32.0" prefWidth="244.0" style="-fx-background-color: #c67aff; -fx-background-radius: 6px;" textFill="#1b0a0a">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRealTime" alignment="CENTER" layoutX="452.0" layoutY="132.0" prefHeight="67.0" prefWidth="244.0" style="-fx-background-color: #c67aff; -fx-background-radius: 6px;" text="11.05">
+         <font>
+            <Font name="Berlin Sans FB" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnParkVehicle" layoutX="452.0" layoutY="242.0" mnemonicParsing="false" onAction="#parkVehicleOnAction" prefHeight="39.0" prefWidth="254.0" style="-fx-background-color: #4b0082; -fx-background-radius: 8PX;" text="PARK VEHICLE" textFill="#f5f3f3">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnOnDelivery" layoutX="453.0" layoutY="300.0" mnemonicParsing="false" onAction="#onDeliveryShiftOnAction" prefHeight="39.0" prefWidth="254.0" style="-fx-background-color: #4b0082; -fx-background-radius: 8PX;" text="ON DILIVERY SHIFT" textFill="#f5f3f3">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnLogIn" layoutX="445.0" layoutY="405.0" mnemonicParsing="false" onAction="#managementLogInOnAction" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" prefHeight="39.0" prefWidth="269.0" style="-fx-background-color: #4b0082; -fx-background-radius: 8PX;" text="MANAGEMENT LOG IN" textFill="#f5f3f3">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
